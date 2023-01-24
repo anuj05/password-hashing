@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Hashing</title>
+
+  </head>
+  <body>
+    <form action="{{ url_for('hash_password') }}" method="POST">
+      <label>Username:</label>
+      <input type="text" name="username">
+      <br>
+      <br>
+      <label for="password">Enter Password:</label>
+      <input type="password" name="password" id="password" required>
+      <br><input type="submit" value="Hash Password">
+  </form>
+
+  </body>
+
+</html>
